@@ -51,12 +51,12 @@ def bubble_sort(list):
     while not sorted:
         sorted = True
         for i in range(length):
-            if list[i] > list[i +1]:
+            if list[i] > list[i + 1]:
                 sorted = False
                 list[i], list[i+1] = list[i+1], list[i]
-    return list
+    print list
 
-print bubble_sort(my_list)
+bubble_sort(my_list)
 
 def select_sort(list):
     for num in range(len(list) - 1, 0, -1):
@@ -65,9 +65,9 @@ def select_sort(list):
             if list[loc] > list[maxPos]:
                 maxPos = loc
         list[num], list[maxPos]=list[maxPos], list[num]
-    return list
+    print list
 
-print select_sort(my_list)
+select_sort(my_list)
 
 def merge_sort(list):
     holder = len(list)
