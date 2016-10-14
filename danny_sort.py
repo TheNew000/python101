@@ -73,7 +73,7 @@ def danny_shortsort_select(list):
                 minPos = loc2
         list[loc2], list[minPos]=list[minPos], list[loc2]
         maxPos = loc2 + 1
-    print list
+    return list
 
 danny_shortsort_select(my_list)
    
@@ -100,7 +100,7 @@ def select_sort(list):
             if list[loc] > list[maxPos]:
                 maxPos = loc
         list[num], list[maxPos]=list[maxPos], list[num]
-    print list
+    return list
 
 select_sort(my_list)
 
